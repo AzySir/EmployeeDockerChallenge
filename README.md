@@ -22,7 +22,7 @@ docker-compose down
 3) Whilst service is up visit the below urls
 
 <li>For Application</li>
-```
+```javascript
 http://localhost:8001
 ```
 <li>For phpmyadmin</li>
