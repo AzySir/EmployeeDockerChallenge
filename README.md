@@ -17,6 +17,7 @@ docker-compose up -d
 ```
 
 <li>Spin Down</li>
+
 ```
 docker-compose down
 ```
