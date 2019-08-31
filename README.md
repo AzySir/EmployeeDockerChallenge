@@ -8,7 +8,6 @@ Docker version 19.03.1, build 74b1e89<br />
 ```
 git clone https://github.com/AzySir/EmployeeDockerChallenge.git
 ```
-----
 
 2) Use Commands to spin up service or spin down
 <li>Spin Up</li>
@@ -22,7 +21,6 @@ docker-compose up -d
 ```
 docker-compose down
 ```
-----
 
 3) Whilst service is up visit the below urls
 
