@@ -6,6 +6,9 @@ Docker version 19.03.1, build 74b1e89
 docker-compose version 1.24.1, build 4667896b
 ```
 
+## Pre-requisite 
+This runs in a chrome browser as a pre-req to the setup
+
 ## Setup  
 1) Clone Repo
 ```
