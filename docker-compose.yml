@@ -9,6 +9,12 @@ services:
       - "8081:80"
     volumes:
       - ./public_html/:/var/www/html/
+  php:
+    build: './php/'
+    networks:
+      - backend
+    volumes:
+      - ./public_html/:/var/www/html/
 networks:
   frontend:
   backend:
