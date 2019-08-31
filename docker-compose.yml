@@ -20,7 +20,7 @@ services:
   # ------- MYSQL-------- #
   mysql:
     build: './mysql/'
-    image: mysql:5.6.40
+    # image: mysql:3.5.40
     networks:
       - backend
     environment:
@@ -28,6 +28,22 @@ services:
       - MYSQL_DATABASE=employees
     volumes:
       - ./sql-scripts/:/docker-entrypoint-initdb.d/
+  # ---- PHPMYADMIN UI ------- #
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql:mysql
+    depends_on:
+      - php
+      - mysql
+    networks:
+      - frontend
+      - backend 
+    ports:
+      - "8082:80"
+    environment:
+      - PMA_ARBITRARY=1
+      - TESTSUITE_PASSWORD=hello1
 networks:
   frontend:
   backend:
