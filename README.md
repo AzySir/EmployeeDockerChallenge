@@ -7,7 +7,8 @@ docker-compose version 1.24.1, build 4667896b
 ```
 
 ## Pre-requisite 
-This runs in a chrome browser as a pre-req to the setup
+<li>This runs in a chrome browser as a pre-req to the setup</li>
+<li>On Start up the mySQL sometimes is delayed when the containers are spun up. So refresh the page until it works. There will be an unauthorised message</li>
 
 ## Setup  
 1) Clone Repo
