@@ -1,5 +1,6 @@
 version: "3.2"
 services:
+  # ------- Apache -------- #
   apache:
     build: './apache/'
     networks:
@@ -9,12 +10,24 @@ services:
       - "8081:80"
     volumes:
       - ./public_html/:/var/www/html/
+  # ------- PHP -------- #
   php:
     build: './php/'
     networks:
       - backend
     volumes:
       - ./public_html/:/var/www/html/
+  # ------- MYSQL-------- #
+  mysql:
+    build: './mysql/'
+    image: mysql:5.6.40
+    networks:
+      - backend
+    environment:
+      - MYSQL_ROOT_PASSWORD=hello1
+      - MYSQL_DATABASE=employees
+    volumes:
+      - ./sql-scripts/:/docker-entrypoint-initdb.d/
 networks:
   frontend:
   backend:
