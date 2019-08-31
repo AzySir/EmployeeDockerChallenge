@@ -1,8 +1,11 @@
 # EmployeeDockerChallenge
 
 ## Docker Version Information
-Docker version 19.03.1, build 74b1e89<br />
----- 
+```
+Docker version 19.03.1, build 74b1e89
+docker-compose version 1.24.1, build 4667896b
+```
+
 ## Setup  
 1) Clone Repo
 ```
