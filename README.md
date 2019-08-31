@@ -36,7 +36,7 @@ http://localhost:8001
 <li>For phpmyadmin</li>
 
 ```
-<a href="http://localhost:8082/">http://localhost:8002</a>
+http://localhost:8002
 
 * host aka server
 $host = 'mysql';
