@@ -2,7 +2,7 @@
 
 ## Docker Version Information
 Docker version 19.03.1, build 74b1e89<br />
-
+---- 
 ## Setup  
 1) Clone Repo
 ```
