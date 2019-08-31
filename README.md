@@ -25,11 +25,12 @@ docker-compose down
 
 <li>For Application</li>
 
-```javascript
+```
 http://localhost:8001
 ```
 
 <li>For phpmyadmin</li>
+
 ```
 http://localhost:8002
 
